@@ -23,6 +23,37 @@
             <img src="to-do-list.png" alt="logo" style="width:200px;height:200px;">
             <h1>Welcome to your favourite new To-Do List Tool!</h1>
         </header>
+        <main>
+            <h1 style="color: hotpink;">Sign Up!</h1>
+            <form>
+                <div>
+                    <label for="user_first_name">First Name</label><br>
+                    <input type="text" id="user_first_name" name="user_first_name" required minlength="3" maxlength="12">
+                </div>
+                <div>
+                    <label for="user_last_name">Last Name</label><br>
+                    <input type="text" id="user_last_name" name="user_last_name" required minlength="3" maxlength="12">
+                </div>
+                <div>
+                    <label for="user_email">Email</label><br>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="user_password" name="user_password" required>
+                </div>
+                <div>
+                    <label for="user_confirm_password">Confirm Password</label><br>
+                    <input type="password" id="user_confirm_password" name="user_confirm_password">
+                </div>
+                <div>
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>Copyrite To-Do List</p>
+        </footer>
 
 
         <script src="js/script.js"></script>
