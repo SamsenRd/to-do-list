@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+}
+
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+main {
+    margin: 10px;
+}
+
+input:focus:invalid {
+    color: red;
+    border: red 3px solid;
+}

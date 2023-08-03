@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Restaurant Booking</title>
+    <meta name="description" content="Come and Book a table with us today!">
+    <meta name="author" content="Restaurant">
+
+    <meta property="og:title" content="Book a Table">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="example.com">
+    <meta property="og:image" content="restaurant.jpeg">
+    <meta name="og:description" content="Book a Table Today!">
+    <meta name="og:locale" content="en_US">
+    <meta name="og:site_name" content="Restaurant Bookings">
+
+    <link rel="stylesheet" href="bookingStyles.css">
+</head>
+<body>
+    <header>
+        <img src="restaurant.jpeg" alt="logo" style="width: 600px;height: 200px;">
+        <h1>Welcome to Restaurant Bookings!</h1>
+        <p>Please select your booking reservation below.</p>
+        <p>We look forward to dining with you!</p>
+    </header>
+
+    <main>
+        <h1>Personal Info</h1>
+        <form method="post">
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required minlength="3">
+            </div>
+            <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required minlength="3">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </form>
+        <form>
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" id="booking_date" name="booking_date">
+            </div>
+            <div>
+                <label for="booking_people">Number of People</label>
+                <input type="range" id="booking_people" name="booking_people" min="1" max="12" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="Downtown"></option>
+                    <option value="Midtown"></option>
+                    <option value="Uptown"></option>
+                </datalist>
+            <div>
+                <fieldset id="location">
+                    <label>
+                        <input type="radio" value="indoors" name="location" checked> Indoors
+                    </label>
+                    <label>
+                        <input type="radio" value="outdoors" name="location"> Outdoors
+                    </label>
+                </fieldset>
+            </div>
+            </div>
+            <button>Book Now!</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
